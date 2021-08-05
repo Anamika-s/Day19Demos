@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>
+  // PRODUCING CODE
+function func1() {
+  return new Promise(function (resolve, reject) {
+     
+          const error = true;
+          if (error) {
+              console.log("Your promise has been fulfilled");
+              resolve();
+          }
+          else {
+              console.log("Promise not fulfilled");
+              reject("Sorry not fulfilled");
+          }
+     
+  });
+}
+// CONSUMING CODE
+func1().then(function () {
+  console.log("Thanks for resolving");
+}).catch(function () {
+    console.log("Very Bad");
+});
+
+
+</script>
+  </head>
+  <body>
+
+  </body>
+  </html>

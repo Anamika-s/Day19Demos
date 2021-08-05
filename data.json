@@ -1,0 +1,21 @@
+{
+  "people":
+    [
+      { "name" : "Ajay",
+        "age": 24,
+        "address":"Delhi"
+      },
+      { "name" : "Deepak",
+        "age": 24,
+        "address":"ODelhi"
+      },
+      { "name" : "Abhijit",
+        "age": 24,
+        "address":"NDelhi"
+      },
+      { "name" : "Gagan",
+        "age": 24,
+        "address":"Delhi"
+      }
+    ]
+  }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>
+  // PRODUCING CODE
+  const objPromise = new  Promise((resolve, reject)=>
+  {
+    let req = true;
+    if(req==true)
+    resolve("Promise is fulfilled");
+   else 
+   reject("Promise is not fulfilled");
+    
+  });
+
+// CONSUMING CODE
+
+objPromise.then(
+  (value) => { console.log(value)},
+  (error) => { console.log(error)}
+);
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+  </html>

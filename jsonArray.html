@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+  <ol id="list">   </ol>
+  <script>
+    var person=
+    [
+      { name : "Ajay",
+        age: 24,
+        address:"Delhi"
+      },
+      { name : "Deepak",
+        age: 24,
+        address:"ODelhi"
+      },
+      { name : "Abhijit",
+        age: 24,
+        address:"NDelhi"
+      },
+      { name : "Gagan",
+        age: 24,
+        address:"Delhi"
+      }
+    ];
+    // console.log(person[0].name);
+    // var data = JSON.stringify(person);
+    // console.log(data);
+    // console.log(data[0].name);
+    // data =  JSON.parse(data);
+    // console.log(data[0].name);
+    var output="";
+    for(var i=0;i<person.length;i++)
+    {
+    console.log(person[i].name);
+    output += '<li>' + person[i].name + '</li>';
+    }
+    console.log(output);
+    document.getElementById("list").innerHTML = output;
+    </script>
+  </body>
+  </html> 

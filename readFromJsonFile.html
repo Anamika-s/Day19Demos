@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+<body>
+<ul id="list"></ul>
+<script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    // console.log(this.readyState);
+    // console.log(this.statusText);
+      if (this.readyState == 4 && this.status == 200) {
+        var output="";
+        console.log(this.responseText);
+       
+        var response = JSON.parse(this.responseText);
+         console.log(response);
+        var people = response.people;
+         console.log(people.length);
+       for(var i=0;i<people.length;i++)
+       {
+         output += '<li>' + people[i].name + '</li>';
+       }
+       document.getElementById("list").innerHTML = output;
+         
+        }
+  };
+  xhttp.open("GET", "data.json", true);
+  xhttp.send();
+  
+    </script>
+</body>
+</html>

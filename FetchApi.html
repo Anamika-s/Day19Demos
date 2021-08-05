@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      async function ReadText()
+      {
+      let response = await fetch("readme.txt");
+    if(response.status==200)
+    {
+      let res = await(response.text());
+       console.log(res);
+    }
+      }
+      ReadText();
+    </script>
+  </head>
+<body>
+  </body>
+  </html> 

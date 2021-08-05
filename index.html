@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>
+  var person=
+  {
+  name:"Jatin",
+  age:34,
+  email: function()
+{
+  return "abc@gmail.com"
+}
+  }
+  var  data = JSON.stringify(person);
+
+  
+  console.log(data);
+   console.log(data.name);
+   data = JSON.parse(data);
+   console.log(data.name);
+  // console.log(person.name);
+  // console.log(person.email());
+
+
+
+
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+</html>
